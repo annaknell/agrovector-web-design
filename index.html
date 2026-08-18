@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrovector | Sistemas integrales para el agro — Tandil</title>
+    <meta name="description" content="Agrovector: sistemas integrales para un agro más eficiente. Tecnología de aplicación, monitoreo, capacitaciones y puesta en marcha. Tandil y la región.">
+    <meta property="og:title" content="Agrovector | Sistemas integrales para el agro">
+    <meta property="og:description" content="Tecnología de aplicación, monitoreo, capacitaciones y puesta en marcha de equipos. Tandil y la región.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://agrovector.com.ar/">
+    <meta property="og:image" content="https://agrovector.com.ar/assets/img/og-logo.webp">
+    <meta property="og:locale" content="es_AR">
+    <meta name="theme-color" content="#0E5831">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+    <script>
+    (function () {
+        var link = document.querySelector('link[rel="icon"]');
+        if (!link) return;
+        var blanco = 'data:image/x-icon;base64,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';
+        var mq = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+        function setFavicon() {
+            link.href = mq && mq.matches ? blanco : 'assets/img/favicon.ico';
+        }
+        setFavicon();
+        if (mq) {
+            if (mq.addEventListener) mq.addEventListener('change', setFavicon);
+            else if (mq.addListener) mq.addListener(setFavicon);
+        }
+    })();
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Agrovector",
+      "description": "Sistemas integrales para un agro más eficiente: tecnología de aplicación, monitoreo, capacitaciones y puesta en marcha de equipos.",
+      "telephone": "+54 2494 514837",
+      "email": "fabioknell@yahoo.com.ar",
+      "areaServed": "Tandil y la región",
+      "url": "https://agrovector.com.ar/",
+      "image": "https://agrovector.com.ar/assets/img/og-logo.webp",
+      "sameAs": ["https://www.instagram.com/agrovector.fk"]
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;600;700&family=Contrail+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preload" as="image" href="assets/img/hero-dron-campo.webp">
+</head>
+<body>
+  
+    <div class="barra-progreso" id="barra-progreso" aria-hidden="true"></div>
+    <!-- Preloader de entrada -->
+    <div class="preloader" id="preloader" aria-hidden="true">
+        <div class="preloader-logo">
+            <img src="assets/img/logo-agrovector-blanco.webp" alt="">
+        </div>
+        <div class="preloader-barra"><span></span></div>
+    </div>
+
+    <div class="main-container">
+        <header>
+            <nav class="navbar">
+                <button class="menu-desplegable" aria-label="Abrir menú" aria-expanded="false">
+                    ☰
+                </button>
+
+                <div class="logo">
+                    <img class="logo" src="assets/img/logo-agrovector.webp"  alt="Logo Agrovector">
+                </div>
+             
+                <ul class="nav-links">
+                
+                    <button class="menu-cerrar" aria-label="Cerrar menú">✕</button>
+                
+                    <img class="logo" src="assets/img/logo-agrovector.webp" alt="Logo Agrovector">
+                    
+                    <li class="item-submenu">
+                        <a href="#all-products" class="link-toggle">Productos <span class="chevron">▾</span></a>
+                        
+                        <ul class="submenu">
+                            <li><a href="#gteex">GTEEX</a></li>
+                            <li><a href="#spraytec">SPRAYTEC</a></li>
+                            <li><a href="#dropsagro">DROPSAGRO</a></li>
+                            <li><a href="#tecnosulf">TECNOSULF</a></li>
+                            <li><a href="#agroadvance">AGROADVANCE</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#capacitaciones">Capacitaciones</a></li>
+                    <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
+
+                    <a href="#contacto" class="mobile-contact-btn">CONTACTANOS</a>
+                </ul>
+
+                <a href="#contacto" class="desktop-contact-btn">CONTACTANOS</a>
+            </nav>
+        </header>
+        <div class="main-info-container hero-video-container">
+            <div class="video-showcase">
+                <video autoplay muted loop playsinline preload="metadata" poster="assets/img/hero-dron-campo.webp" aria-hidden="true">
+                    <source src="assets/videos/hero-video-h.mp4" media="(min-width: 768px)" type="video/mp4">
+                    <source src="assets/videos/hero-video.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-showcase-overlay" aria-hidden="true"></div>
+            <div class="main-text-container hero-text-container">
+                <span class="hero-badge">Tecnología de aplicación · Tandil y la región</span>
+                <h1 class="hero-titulo">SISTEMAS INTEGRALES PARA UN AGRO MÁS EFICIENTE Y SUSTENTABLE</h1>
+                <p class="hero-parrafo">No somos un distribuidor más. Te acompañamos antes, durante
+                    y después de cada solución: asesoramiento técnico,
+                    capacitación real y presencia en toda la región.
+                </p>
+            </div>
+        </div>
+
+        <!-- SECCION ESTADISTICAS -->
+        <div class="stats-section">
+            <div class="stat-item">
+                <span class="stat-numero" data-contador="50000" data-sufijo="+">0</span>
+                <span class="stat-label">Hectáreas acompañadas</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-numero" data-contador="30" data-prefijo="hasta " data-sufijo="%">0</span>
+                <span class="stat-label">Ahorro de insumos</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-numero" data-contador="40" data-sufijo="+">0</span>
+                <span class="stat-label">Equipos puestos en marcha</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-numero" data-contador="100" data-sufijo="%">0</span>
+                <span class="stat-label">Acompañamiento real</span>
+            </div>
+        </div>
+
+        <div id="capacitaciones" class="capacitaciones-container">
+            <div class="capacitaciones-text-container">
+                <h2 class="underline">CAPACITACIONES Y DEMOSTRACIONES TÉCNICAS</h2>
+                <p>
+                    tLorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.
+                </p>
+            </div>
+            <div class="carrousel-img-container swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" id="slide1">
+                        <img class="big-img1" src="assets/img/capacitaciones/capacitacion-01.webp" loading="lazy" alt="Capacitación Agrovector — foto 1">
+                        <img class="small-img1" src="assets/img/capacitaciones/capacitacion-02.webp" loading="lazy" alt="Capacitación Agrovector — foto 2">
+                        <img class="small-img2" src="assets/img/capacitaciones/capacitacion-03.webp" loading="lazy" alt="Capacitación Agrovector — foto 3">
+                        <img class="big-img2" src="assets/img/capacitaciones/capacitacion-04.webp" loading="lazy" alt="Capacitación Agrovector — foto 4">
+                    </div>
+                    <div class="swiper-slide" id="slide2">
+                        <img class="big-img1" src="assets/img/capacitaciones/capacitacion-05.webp" loading="lazy" alt="Capacitación Agrovector — foto 5">
+                        <img class="small-img1" src="assets/img/capacitaciones/capacitacion-06.webp" loading="lazy" alt="Capacitación Agrovector — foto 6">
+                        <img class="small-img2" src="assets/img/capacitaciones/capacitacion-07.webp" loading="lazy" alt="Capacitación Agrovector — foto 7">
+                        <img class="big-img2" src="assets/img/capacitaciones/capacitacion-08.webp" loading="lazy" alt="Capacitación Agrovector — foto 8">
+                    </div>
+                    <div class="swiper-slide" id="slide3">
+                        <img class="big-img1" src="assets/img/capacitaciones/capacitacion-13.webp" loading="lazy" alt="Capacitación Agrovector — foto 13">
+                        <img class="small-img1" src="assets/img/galeria-09.webp" loading="lazy" alt="galeria 09">
+                        <img class="small-img2" src="assets/img/capacitaciones/capacitacion-11.webp" loading="lazy" alt="Capacitación Agrovector — foto 9">
+                        <img class="big-img2" src="assets/img/capacitaciones/capacitacion-12.webp" loading="lazy" alt="Capacitación Agrovector — foto 10">
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+ <!-- SECCION  INTERACTIVA  -->
+
+<div class="interactiva-header">
+    <span class="eyebrow">Nuestros servicios</span>
+    <h2 class="underline">TECNOLOGÍA DE APLICACIÓN DE ALTA PRECISIÓN</h2>
+    <p>Servicios diseñados para que tu operación gane precisión, rendimiento y tranquilidad en cada campaña.</p>
+</div>
+
+</div>
+    <div id="sobre-nosotros" class="interactive-container">
+        
+        <div class="image-showcase">
+            <img src="assets/img/capacitaciones/capacitacion-06.webp" loading="lazy" alt="GTEEX" class="showcase-img active" id="img-0">
+            <img src="assets/img/capacitaciones/integracion-multimarca.webp" loading="lazy" alt="Multimarca" class="showcase-img" id="img-1">
+            <img src="assets/img/capacitaciones/capacitacion-07.webp" loading="lazy" alt="Capacitación" class="showcase-img" id="img-2">
+            <div class="showcase-caption"><span class="showcase-caption-text" id="showcase-titulo">Estándar GTEEX</span></div>
+        </div>
+
+        <div class="content-list">
+            
+            <div class="list-item active" data-index="0">
+                <span class="num">01</span>
+                <div class="txt"><h3>Estándar GTEEX</h3>
+                <p>Aplicación de alta precisión. Máximo control sobre caudales y telemetría en tiempo real con tecnología GTEEX como núcleo.</p></div>
+            </div>
+            
+            <div class="list-item" data-index="1">
+                <span class="num">02</span>
+                <div class="txt"><h3>Integración Multimarca</h3>
+                <p>Nuestra metodología es extensible. Optimizamos y ponemos en marcha los equipos que ya forman parte de tu inventario agrícola.</p></div>
+            </div>
+            
+            <div class="list-item" data-index="2">
+                <span class="num">03</span>
+                <div class="txt"><h3>Jornadas en Campo</h3>
+                <p>Entrenamiento operativo in-situ. Preparamos a tu equipo en planificación de misiones y protocolos de seguridad.</p></div>
+            </div>
+            
+        </div>
+    </div>
+
+
+ <!-- SECCION  SERVICIOS CARDS -->
+<div class="servicios-wrapper">
+    <div class="slider-container">
+        
+        <div class="slider-track" id="track">
+            
+            <article class="card-servicio">
+                <div class="card-img-wrapper">
+                    <img src="assets/img/capacitaciones/capacitacion-03.webp" loading="lazy"alt="Puesta en Marcha">
+                </div>
+                <div class="card-body">
+                    <h3>Puesta en<br>Marcha</h3>
+                    <p>Configuración inicial, calibración en terreno y primeros vuelos asegurados junto a nuestros especialistas. Dejamos el equipo listo bajo tus condiciones reales.</p>
+                    <a href="resultados.html" class="mas-info">Conocé más</a>
+                </div>
+            </article>
+
+            <article class="card-servicio">
+                <div class="card-img-wrapper">
+                    <img src="assets/img/capacitaciones/capacitacion-11.webp" loading="lazy" alt="Capacitaciones Técnicas">
+                </div>
+                <div class="card-body">
+                    <h3>Capacitaciones<br>Técnicas</h3>
+                    <p>Formación profunda en sistemas de aplicación, planificación de vuelos y seguridad operativa en el lote. Tu equipo dominará el sistema desde el primer día.</p>
+                    <a href="resultados.html" class="mas-info mas-info--placeholder" aria-hidden="true" tabindex="-1">&nbsp;</a>
+                </div>
+            </article>
+
+            <article class="card-servicio">
+                <div class="card-img-wrapper">
+                    <img src="assets/img/capacitaciones/acompanamiento-operativo.webp" loading="lazy" alt="Acompañamiento Operativo">
+                </div>
+                <div class="card-body">
+                    <h3>Acompañamiento<br>Operativo</h3>
+                    <p>Soporte continuo durante las campañas. Resolvemos desafíos reales en tiempo real para optimizar la productividad y minimizar tiempos muertos en el lote.</p>
+                    <a href="resultados.html" class="mas-info mas-info--placeholder" aria-hidden="true" tabindex="-1">&nbsp;</a>
+                </div>
+            </article>
+
+        </div>
+    </div>
+
+    
+    <div class="slider-controls">
+        <button class="slider-btn btn-prev" aria-label="Anterior">
+         
+            <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.5 15L1.5 8L8.5 1" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        
+        <div class="slider-pagination">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+        </div>
+
+        <button class="slider-btn btn-next" aria-label="Siguiente">
+            
+            <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.5 1L8.5 8L1.5 15" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+    </div>
+</div>
+
+ <!-- SECCION  PRODUCTOS -->
+        <div id="all-products" class="products-container">
+            <div class="products-main-text">
+              
+                <h2 class="underline">LAS MARCAS LÍDERES PARA UN AGRO MÁS EFICIENTE</h2>
+                <p>
+                    Tecnología de aplicación, monitoreo y nutrición vegetal y animal.
+                    Armamos el sistema completo: cada equipo calibrado y configurado para rendir al máximo en tu lote.
+                </p>
+            </div>
+            <div class="products-main-info">
+    
+                    <!-- GTEEX -->
+                    <div class="product-info" id="gteex">
+                        <div class="brand-text">
+                        <span class="eyebrow">Alta precisión</span>
+                            <h3 class="underline">GTEEX</h3>
+                            <p>
+                                tLorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                            </p>
+                        </div>
+
+                     
+                        <div class="productos-grid swiper">
+                      
+                            <div class="swiper-wrapper">
+                               
+                                <div class="producto-item swiper-slide">
+    <a href="https://www.gteex.com.ar/drones/king-150" target="_blank" rel="noopener noreferrer" class="producto-link">
+        <span class="product-name">King-150 Max</span>
+        <img src="assets/img/king-150-max.webp" loading="lazy" alt="King 150 Max">
+    </a>
+</div>
+                                <div class="producto-item swiper-slide">
+    <a href="https://www.gteex.com.ar/drones/king-100" target="_blank" rel="noopener noreferrer" class="producto-link">
+        <span class="product-name">King-100</span>
+        <img src="assets/img/king-100.webp" loading="lazy" alt="King 100">
+    </a>
+</div>
+                                <div class="producto-item swiper-slide">
+    <a href="https://www.gteex.com.ar/drones/gt-40" target="_blank" rel="noopener noreferrer" class="producto-link">
+        <span class="product-name">GT-40</span>
+        <img src="assets/img/gteex-gt40.webp" loading="lazy"  alt="GT 40">
+    </a>
+</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SPRAYTEC -->
+                    <div class="product-info" id="spraytec">
+                        <div class="brand-text">
+                                <span class="eyebrow">Pulverización</span>
+                            <h3 class="underline">SPRAYTEC</h3>
+                            <p>
+                                tLorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                            </p>
+                        </div>
+
+                        <div class="productos-grid swiper">
+                            <div class="swiper-wrapper">
+                                <div class="producto-item swiper-slide">
+    <a href="https://spraytec.com.ar/productos/cat/1/agro" target="_blank" rel="noopener noreferrer" class="producto-link">
+        <span class="product-name">Pulverizadora 25 L</span>
+        <img src="assets/img/galeria-02.webp" loading="lazy" alt="Pulverizadora Spraytec 25 litros">
+    </a>
+</div>
+                                <div class="producto-item swiper-slide">
+    <a href="https://spraytec.com.ar/productos/cat/1/agro" target="_blank" rel="noopener noreferrer" class="producto-link">
+        <span class="product-name">Pulverizadora 60 L</span>
+        <img src="assets/img/galeria-03.webp" loading="lazy"  alt="Pulverizadora Spraytec 60 litros">
+    </a>
+</div>
+                                <div class="producto-item swiper-slide">
+    <a href="https://spraytec.com.ar/productos/cat/1/agro" target="_blank" rel="noopener noreferrer" class="producto-link">
+        <span class="product-name">Kit de aplicación</span>
+        <img src="assets/img/galeria-04.webp" loading="lazy" alt="Kit de aplicación Spraytec">
+    </a>
+</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DROPS AGRO -->
+                    <div class="product-info" id="dropsagro">
+                        <div class="brand-text">
+                                <span class="eyebrow">Drones de aplicación</span>
+                            <h3 class="underline">DROPS AGRO</h3>
+                            <p>
+                                tLorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                            </p>
+                        </div>
+
+                        <div class="productos-grid swiper">
+                            <div class="swiper-wrapper">
+                                <div class="producto-item swiper-slide">
+    <a href="https://www.drops-agro.com/" target="_blank" rel="noopener noreferrer" class="producto-link">
+        <span class="product-name">Drops lite 5"</span>
+        <img src="assets/img/drops-lite.webp" loading="lazy" alt="Dron Drops lite 5 pulgadas">
+    </a>
+</div>
+                                <div class="producto-item swiper-slide">
+    <a href="https://www.drops-agro.com/" target="_blank" rel="noopener noreferrer" class="producto-link">
+        <span class="product-name">Drops full 10"</span>
+        <img src="assets/img/drops-full.webp" loading="lazy" alt="Dron Drops full 10 pulgadas">
+    </a>
+</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TECNOSULF (desliza solo) -->
+                    <div class="product-info" id="tecnosulf">
+                        <div class="brand-text">
+                                <span class="eyebrow">Nutrición vegetal y animal</span>
+                            <h3 class="underline">TECNOSULF</h3>
+                            <p>
+                                tLorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                            </p>
+                        </div>
+
+                        <div class="productos-grid swiper">
+                            <div class="swiper-wrapper">
+                                <div class="producto-item swiper-slide">
+    <a href="https://tecnosulfargentina.com/bioestimulante-integral-con-aminoacidos/" target="_blank" rel="noopener noreferrer" class="producto-link">
+        <span class="product-name">TecnoGreen</span>
+        <img src="assets/img/tecno-green.webp" loading="lazy" alt="Producto TecnoGreen">
+    </a>
+</div>
+                                <div class="producto-item swiper-slide">
+    <a href="https://tecnosulfargentina.com/bionutriente-integral-natural/" target="_blank" rel="noopener noreferrer" class="producto-link">
+        <span class="product-name">TecnoTerra</span>
+        <img src="assets/img/tecno-tierra.webp" loading="lazy" alt="Producto TecnoTerra">
+    </a>
+</div>
+                                <div class="producto-item swiper-slide">
+    <a href="https://tecnosulfargentina.com/tecnomax-plus/" target="_blank" rel="noopener noreferrer" class="producto-link">
+        <span class="product-name">TecnoMax-Plus</span>
+        <img src="assets/img/tecno-max-plus.webp" loading="lazy" alt="Producto TecnoMax Plus">
+    </a>
+</div>
+                                <div class="producto-item swiper-slide">
+    <a href="https://tecnosulfargentina.com/tecnoponia/" target="_blank" rel="noopener noreferrer" class="producto-link">
+        <span class="product-name">TecnoPonia</span>
+        <img src="assets/img/tecno-ponia.webp" loading="lazy" alt="Producto TecnoPonia">
+    </a>
+</div>
+                                <div class="producto-item swiper-slide">
+    <a href="https://tecnosulfargentina.com/tecnodiet-ternero/" target="_blank" rel="noopener noreferrer" class="producto-link">
+        <span class="product-name">TecnoDiet</span>
+        <img src="assets/img/tecno-diet.webp" loading="lazy" alt="Producto TecnoDiet">
+    </a>
+</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AGRO ADVANCE -->
+                    <div class="product-info" id="agroadvance">
+                        <div class="brand-text">
+                                <span class="eyebrow">Tecnología y servicios</span>
+                            <h3 class="underline">AGRO ADVANCE</h3>
+                            <p>
+                                tLorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                            </p>
+                        </div>
+
+                        <div class="productos-grid swiper">
+                            <div class="swiper-wrapper">
+                                <div class="producto-item swiper-slide">
+    <a href="https://agroadvance.com.ar/coadyuvantes/impact/" target="_blank" rel="noopener noreferrer" class="producto-link">
+        <span class="product-name">Impact</span>
+        <img src="assets/img/dron-impacto.webp" loading="lazy" alt="Producto Impact">
+    </a>
+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+ <!-- SECCION  CONTACTO -->
+<div class="contacto-wrapper" id="contacto">
+    <article class="card-contacto">
+        
+        <!-- Encabezado -->
+        <div class="contacto-header">
+            <h2>Contacto</h2>
+            <h3>Fabio Knell</h3>
+        </div>
+
+        <!-- Lista de datos -->
+        <div class="contacto-body">
+            <div class="contacto-row">
+                <span class="contacto-icono" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+                <span class="contacto-label">Teléfono</span>
+                <span class="contacto-valor">2494 514837</span>
+            </div>
+            
+            <div class="contacto-row">
+                <span class="contacto-icono" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
+                <span class="contacto-label">Email</span>
+                <span class="contacto-valor">fabioknell@yahoo.com.ar</span>
+            </div>
+            
+            <div class="contacto-row">
+                <span class="contacto-icono" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></span>
+                <span class="contacto-label">Instagram</span>
+                <span class="contacto-valor">@agrovector.fk</span>
+            </div>
+            
+            <div class="contacto-row">
+                <span class="contacto-icono" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+                <span class="contacto-label">Cobertura</span>
+                <span class="contacto-valor">Tandil y la región</span>
+            </div>
+        </div>
+
+        <a href="https://wa.me/5492494514837?text=Hola%20Fabio,%20me%20comunico%20desde%20la%20web%20para%20hacer%20una%20consulta." 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="btn-whatsapp">
+           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+           WhatsApp Directo
+        </a>
+
+    </article>
+</div>
+
+ <!-- SECCION FOOTER -->
+<footer class="footer-profesional">
+    <div class="footer-grid"> 
+
+       <div class="footer-brand">
+            
+            <div class="brand-logos">
+    
+                <img src="assets/img/logo-agrovector-blanco.webp" alt="Agrovector" class="logo-principal">
+                <a href="https://gteex.com.ar" target="_blank" rel="noopener noreferrer" aria-label="Sitio web de GTEEX">
+                    <img src="assets/img/logo-gteex.webp" loading="lazy" alt="GTEEX" class="logo-gteex">
+                </a>
+                <a href="https://www.drops-agro.com/" target="_blank" rel="noopener noreferrer" aria-label="Sitio web de Drops Agro">
+                    <img src="assets/img/logo-drops.webp" loading="lazy" alt="Drops Agro" class="logo-drops">
+                </a>
+                <a href="https://tecnosulfargentina.com/" target="_blank" rel="noopener noreferrer" aria-label="Sitio web de Tecnosulf">
+                    <img src="assets/img/logo-tecnosulf.webp" loading="lazy" alt="Logo Hoja" class="logo-hoja">
+                </a>
+                <a href="https://spraytec.com.ar" target="_blank" rel="noopener noreferrer" aria-label="Sitio web de Spraytec">
+                    <img src="assets/img/logo-spraytec-blanco.png" loading="lazy" alt="Spraytec" class="logo-spraytec">
+                </a>
+                <a href="https://agroadvance.com.ar" target="_blank" rel="noopener noreferrer" aria-label="Sitio web de AgroAdvance">
+                    <img src="assets/img/logo-agroadvance-light.png" loading="lazy" alt="AgroAdvance" class="logo-agroadvance">
+                </a>
+            </div>
+
+            <p>Sistemas integrales para un agro más eficiente. Especialistas en tecnología de aplicación, monitoreo y puesta en marcha de equipos.</p>
+        </div>
+
+        <!-- Bloque: Navegación -->
+        <div class="footer-col">
+            <h4>Explorar</h4>
+            <ul>
+                <li><a href="#gteex">Sistemas GTEEX</a></li>
+                <li><a href="#dropsagro">Drones Agrícolas</a></li>
+                <li><a href="#all-products">Productos</a></li>
+                <li><a href="#capacitaciones">Experiencias</a></li>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+            </ul>
+        </div>
+
+        <!-- Bloque: Contacto -->
+        <div class="footer-col">
+            <h4>Atención Comercial</h4>
+            
+            <div class="contacto-info">
+                <div class="contacto-item">
+                    <span class="label">Asesor</span>
+                    <span class="valor">Fabio Knell</span>
+                </div>
+                <div class="contacto-item">
+                    <span class="label">Línea Directa</span>
+                    <span class="valor">2494 514837</span>
+                </div>
+                <div class="contacto-item">
+                    <span class="label">Correo Electrónico</span>
+                    <a href="mailto:fabioknell@yahoo.com.ar" class="contacto-link">fabioknell@yahoo.com.ar</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="footer-bottom">
+        <span>© 2026 Agrovector. Todos los derechos reservados.</span>
+        <span>Desarrollado para el campo argentino</span>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+
+    <button class="volver-arriba" id="volver-arriba" aria-label="Volver arriba">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+    </button>
+</body>
+</html>

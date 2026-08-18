@@ -1,0 +1,19 @@
+# ── Agrovector — configuración para hosts Apache (clásicos) ──
+
+# Compresión (la página se transfiere ~70% más liviana)
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css application/javascript application/json image/svg+xml
+</IfModule>
+
+# Caché en el navegador del visitante
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/webp "access plus 1 month"
+  ExpiresByType image/png  "access plus 1 month"
+  ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresByType text/css "access plus 1 week"
+  ExpiresByType application/javascript "access plus 1 week"
+</IfModule>
+
+# Página 404 personalizada
+ErrorDocument 404 /404.html

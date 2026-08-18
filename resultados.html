@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrovector | Resultados e informes de campo</title>
+    <meta name="description" content="Resultados e informes de campo de Agrovector: documentación técnica de puesta en marcha, calibración y ensayos de precisión. Tandil y la región.">
+    <meta property="og:title" content="Agrovector | Resultados e informes de campo">
+    <meta property="og:description" content="Documentación técnica de puesta en marcha, calibración y ensayos de precisión.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://agrovector.com.ar/resultados.html">
+    <meta property="og:image" content="https://agrovector.com.ar/assets/img/og-logo.webp">
+    <meta property="og:locale" content="es_AR">
+    <meta name="theme-color" content="#0E5831">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+    <script>
+    (function () {
+        var link = document.querySelector('link[rel="icon"]');
+        if (!link) return;
+        var blanco = 'data:image/x-icon;base64,AAABAAMAEBAAAAAAIAANAgAANgAAACAgAAAAACAAHwUAAEMCAAAwMAAAAAAgAIoIAABiBwAAiVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB1ElEQVR4nG2TTYiNYRTHf+fObXxc5aNBRogFNmzssJONfCyYHclCSZKyVEoWakZoTNSILJWUUDZjYWMlGyJsaMxQoslX0cz89Nx7bt7MPfX0nvd8Pef8z/8J9RoQwHpgDPgD3AHuRcQ0gFoDdgJ9QDewHHgNTIe6FZgEjgGPgRfAaER8UOeX/Ij4ppaklcA6YAdwEegib2ioY+r5pqFlG1Q/5rlUsQ+opfictqGmbvSffM1i/0uxTVT+S06tXuZUR4G7OcIb4DCwO8cR2AA8BYZzhC3A+zZGM0S9oU6pD/NMqjdnRrbQb6PcnWCeAmYB74ChjDkOrACmgNPAbOB3xw7UC+qC1HvVnopvWK1X4+vpWAYsBZqdRMREs72I8YK2egLYDPQCD9TS1UBEjLSrbQLuA6+AH+ot4CqwBDgDPAGeAb+ARoLYU8WgAfQDq4HvwFtgb7LzALAot3I7Oyn27YVgdbUrIn6qL4FxYGFxAkeBPcCVXOfBZN884Hqys1aoXOYuu14FPAeOAHOBwbxtVyZ/zhELH0aSL80J2mss375k2Tb1UOpr1Mupn1T3V3Oq62s+jIJ4Bq9Vh9Qv6mL1kXquY3KHIvvKA8oVflLPVnyttlP+AnCVZed4qLN+AAAAAElFTkSuQmCCiVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAE5klEQVR4nJ2XaYiWVRTH//f11VEzKtcyLc3CFkcxbbEiIgppwyxbQHJsgYoIok8JFbR9qDCy/FAWFkjQhkEr5QehVGg1LCnKslJKU9yyzHTmF2fmf53rM77O6IHDc5/7nHvOuWd/EnCupD6SkqRWScdLekjSHEmbvR+4U9KqlNIeHQSA3pLGSxoQr8bhku43bpFU8/7uOLAD2AP8B/xrxO+7ja3AWuAkC6kBKWPe83Mk8IPP5POZ516/7zFuDwYXShroC+yVdIykeZKekPSNpLqkXrbGCkltQZhSaqvcvJdvFTBF0lDTZqvOtQV+Mk+ZZxcTjg3NgIu6MXVfYICxbze0k4BdwPgDfayF9sZjgU+ANuBT4ETT1IE+Xh8JPA38AqwzrgGeCmVyHNgisR4BrLALlgKDCnm1fUr4eYkJw38BtwMD8w2B/sB7NIa3gCbHRj9gCHBHhefFpcyUX8KnNvsS+xz7cLuk3yT9KGmk/RuxUsvnC9rw7TJJGySNlTTC2dDLtHFuakppaZZZr3gkv2cBcXCQcaK/ZUF5LdPW/H5B1cvGvVZiP5n1CvG2yt5sZ8VVkiZJOsqCMpTr8j2s9pWkD8xzQfHtzy6BGGC/RbDNAO72s1YE6jjgBQdo1IiAR4FHiroR314CmosgTAXPaWXt6BEU0T8U+MzCcmFpNpZ7K4HhPtPUY0EZnB71Mk2Ao4EvLeA73zRwubHNUb7aNKsie3w2lTzVU6DzYOT0K2Y8GzjP6xBahSnAjV6/7pRsL9uHZQl1PCe4ft/n92D4GPC3+0jgX8DDxZl7rMRZJa9DVaDuZ9xofRZefB8OjDIeV1itt5/bgFleN9kFgbWGaUjHx2yubLqTJa0tzRjrlNLvlbO93arb23XEjKQxKaWOttsA6uVLpcO1mtGpktaUxSaYWqGOcppSawiPPiGpWdIZkgZLuhkYYwV+lbQ6Zoq4UEopCpPqvk0wDGWm+mAUj42S1kmaIGlhCAmlTBeK1jITKznLBWtccYlNkiZLOkLSMEkxrKyUdHmU63aLF9Eez/cdPLuLASLgY+CWaNUVs4f/5xX08XwTaAFOA6YCc90tI1A3uZnV9ssOOgPuLjNaD7wDvAF8X6RZMFgEnOngjFYcsNVZMMJ8QvDbnnriEs8Cc4BvgXu7ZAadY9UJRWHZZWFXR5d0Gc4lON846BYCo33+0qJaRpo+AAwDIhZ+9rlTqhm1H0S/BqYXxSfgeZt7rGt9hh2+bX8rkuFFl+4YPhYXtK817AV0xsFNwEcRvTExA1+Ywc4YLkx7hf2aGUeaYpdMN81k3zrgZWB+1IUs60AKJAdGk321wdaIwvJ4cbvFngcHu9xm+COEmteVwBbvPwdMBJZ4umpcmukspXFD7POZ3mtxJOM4GeL9JwvamBWvK+gWmWYZcFvD2zdQ4tWCcYv3pnliDvi6CL7oDVQCdLm/PRiDbsn7oEBnjo52OuJ0utbfr3GEB3weUe79+QXtRpt7invC6dnF3SpQscJlReptLbrbnUU7/tD/Bv28zvFwvWeHnpm+CkVxutW3ytNO9n0UlwzPeG9UUZwoWnh19tShWmKWTRmw0HsDrFCGG7w/w+PZvop3WAOJulribKdSQDbr+cA/3tvs+bB9gD1sgd0oEd1zpgMuWm/sLXDkvwucU5zpUcD9D0ZGi6rGBwssAAAAAElFTkSuQmCCiVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAIUUlEQVR4nL1ZCYxeUxT+7sx0VC1VS7WidKV2USZEUlTU0hYVJNbYElQQIU2Qilpj30WLlKCIpREkqhFiDVpbKaGttWkp0dpaM/PPJ+fvdyZnbt+/jGl7kpe33HPPfs899zygCpC8kuRSkn2xgYHkdiR/JXl6NbxE8jkA29ocew/3VgB7AtgKwFwA/4ZxgxKAJgB3ppSeIdmYUirVKVwZl+REAJeKVqPLpPc+AEYBWA5gAYBegbfLuMyI1YKOGuMPSqimbli3jEvy1h7ypnngYAC7ZR4waywGMAnAUQBuA/AVgI0BdARZzFKzUko/G62UUtlC9ryWqzXm4/ZO0rx7nKzrYLz/BrAlgFsAfAzgXgCbBOs7rfm1LDVTilaNwyiYhUeVsaYi5YqA5JHiPQdVoEkMc6INKaXW8L18J9kbQHuGW5I1bY55pxRwy49rHJBW+9zggRRiv1Mm4Ta4LJoT10CnnrnWSVdvktOUBdpIfkbyFFlwLSua8LpvQvJGkvNJ/kDyR92/J/khyetI9olzCjxk1/GiYbxXaK001vReWFzjwzoxIgbzMtwGMWsOaW9erUVH8n2S22hOs2jkyryf8TYYo7EuHquUOTZTKJiLjLiFRh+SBwH4DsBShVh5QZPcHMBsALsr/VaiayHUAuAlSx4ppVVBaPPMAACDAGwh2g2akzRm0MULlRh5Xra7W2ckgDcAWHza5vYtgIXlXAwcKeGNWdkjFaA5KDGH5GsAtgcwAsAQAP0L5ntWzNdeVQUqxZoLOERX2a0Cs1g9e0GTcA/UFcG+twkn1SNTNYYd2c6XC9gWPGQWKkqfvmd0iXG929yScGxuL31vCLne9yUPp7Wg8GOY4PGftJFZqDwE4Fsx7C2PFOb+QKMIbE6zaBitHwA8DuBE8UqZHLa5VYeQRrcluYik1SurSbaTvDrgbUzyUJL32lpQtojbvj97Gs3LAntuVXq9j+RYS8GB/lXiuVoyfGoFpctXUwndtyA5guRwksP0zXLxWmFH8lEJ1i7h7FpFcijJIST/Cd8Nx+CpgvTpGyvEd4SuTaNsdXmiDk9tpOcJJP+SRTtkMYPFAX+xvpWC9U3BEzW+UT086xI+E7LBr2zMrTRK1o2hET2wM8mReo5jDq0kDyzaoCLvbgtfQzEvGwaR/ClY9vmCNbBcV74GniT5r56XkRwcaa83CF6xmmduEOg8ja1QjHuoRIVKGvtDtE4K459oza1ba1eplSYH5heG8ctYGy4L+GcERa+NPNaXAh4+r8iak7zUdeuRvNOsrPhu02XPv5O8JXixfIgheaa8867eu+WBupFDDW+L7ScAK1NKI4vOwiSt8CqXzQH+TCktj/Sw5pxgHliqDW07K/Di6W59WH+AXP6Cl9RFeBVo5JmmUbn/ddHcyUt03xNqrYvurHonYkWcwdc6gXVFWmPRLinYhVAnws8R5TIlpWQF4juaPsDerVTX3U57He75IuMU7apFx7xySWtUVFYbLKqo6Rr3dwkBCUAp7eeIfiR3BNBP+JeQ3F9y/ar6yK6FOn/0HEjeLHePr1Ra5IJn71ZeXEDyZZJLQhaq1kL5huRjJEe7d51eJ3M/lJPcFcDxoZxdAmCF7j8C2FtjH8eQUDh0hpQz8QVOchyAswGMDS2SCMbrD1W6q3UqtGp1IIDhuixs35RROiot0r2qWGKldlBLjdeSbIkeCIuu0+qqNN8qoGWV5nskbyd5rIq+gSQPkZc/UFPBwVLxnlUTRahE50nIv5W/fdtngbvnq/wdkdHaURVnDl+TnEpyj4Br5+1zSb6d4ZoMb0rRD1XGp3p2WmuNlLQhfUVyOskpJB8g+WUF71hRN4PkLmqLeA3k1elCkuerAeD8did5P8nfMlpzVGrsq1bMLyTviTJWUsCrzP0quHsSye1VZV6vQ0/uFXO1g9dEN1mtE/hYjf9wVsn+aX1WC2HhHE7y8zA+OspYFRTL1tq7K1jSwToSFwVca3i9mwnthZvNHRVwe6lesqIvwuMkdwvh9Gw2vkBz6zqR+WIeY7W6dsWLM2t7SBwX5p2scGNQYJVqI4vdwSTfyLw1n+QRgcbBJL8LPJYJ55qa4VOgwDAtoinh1DRFmSiC/RsYKJy+yiAuYHsol5dkwttZOJ6Dz8rCb4GiYFE40tZXOYS1YEyoWqW/vu1K8lV9bw2H93Fh/hgd9n39OLRpwZ6TGWtqRu89Gexpki9GmepVwEvjYUqlVAehJYxfHYRymBxoWGfDWohUGnbhLte4/Wuw+92ZorMV7+P0PjzffbvrBWdAhc9hAWeiDvTRereH8aTWi4+XRGO8xqdrzNYKdc4wy2+mFD6j29bPmJult5bbW4Olxge8/UOmcivO8Ha5cK7LlLTNcVbwDtWRLu8RJJ8Qrf7/y/oFXjgzMPO2yNiAtwfJnzMlHtGYn7xuyJSI4WepeZDwTtW3S/639Sso8WJmMVsbBwS8fWTZjqDENI15D2laUMKEL2kDK4el1txfWsTl31U9PuSHA8lWoU3oVvxFTD2bjJZg7UHRGzXWLKFmZ4aY64ZSAWe78w7Ou0fCF3ihJbQJXYkvrPUXQuW0oKTjnBGE7Bc6da26T9aubzAh8lxnEBbk0aHD5lZ8Kv7YI3lHENCbtPsGWi1ZGDlcHHmtcwhKnBCs5ylwUgiVRpW/DHhm9c0DjSuy8cnrvS+UKXGoahXKwrao9w4t+p30rRSEnKm5Xpi9ru9nbxDhC5QYHMoKyuoprAc7pFNh5EqcojFLDEMrNXc3hBKNWSXqv0anBitbKH3ErrDSNygU0NrQSnQ2nfRspYW1D62m98x1hBarHSXtR8gxag77Tt8j4f8DzCLW5WuRyQwAAAAASUVORK5CYII=';
+        var mq = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+        function setFavicon() {
+            link.href = mq && mq.matches ? blanco : 'assets/img/favicon.ico';
+        }
+        setFavicon();
+        if (mq) {
+            if (mq.addEventListener) mq.addEventListener('change', setFavicon);
+            else if (mq.addListener) mq.addListener(setFavicon);
+        }
+    })();
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Agrovector",
+      "description": "Sistemas integrales para un agro más eficiente: tecnología de aplicación, monitoreo, capacitaciones y puesta en marcha de equipos.",
+      "telephone": "+54 2494 514837",
+      "email": "fabioknell@yahoo.com.ar",
+      "areaServed": "Tandil y la región",
+      "url": "https://agrovector.com.ar/",
+      "image": "https://agrovector.com.ar/assets/img/og-logo.webp",
+      "sameAs": ["https://www.instagram.com/agrovector.fk"]
+    }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;600;700&family=Contrail+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Header -->
+        <header>
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img class="logo" src="assets/img/logo-agrovector.webp" alt="Logo Agrovector">
+                </a>
+                
+                <a href="index.html" class="btn-volver">
+                    ← Volver al sitio principal
+                </a>
+                <a href="index.html#contacto" class="desktop-contact-btn resultados-contact">CONTACTANOS</a>
+            </nav>
+        </header>
+
+        <!-- Contenido Principal de Resultados -->
+        <main class="resultados-container">
+            <div class="resultados-header">
+                <div>
+                    <span class="eyebrow">Documentación técnica</span>
+                    <h1 class="underline">RESULTADOS E INFORMES DE CAMPO</h1>
+                    <p>Documentación técnica de puesta en marcha, calibración y ensayos de precisión.</p>
+                </div>
+
+              
+                <a href="assets/pdf/validacion-resultados.pdf" target="_blank" download class="btn-descargar">
+                    <span>Descargar informe (PDF)</span>
+                </a>
+            </div>
+
+            <!-- Visor del PDF -->
+            <div class="pdf-viewer-container">
+                <object data="assets/pdf/validacion-resultados.pdf#view=FitH" type="application/pdf">
+                    <iframe src="assets/pdf/validacion-resultados.pdf">
+                        <p>Tu navegador no soporta la visualización de PDF directa. 
+                        <a href="assets/pdf/validacion-resultados.pdf" target="_blank">Hacé clic aquí para descargar o ver el PDF.</a></p>
+                    </iframe>
+                </object>
+            </div>
+        </main>
+
+       <footer class="footer-profesional">
+    <div class="footer-grid">
+        
+      
+      <div class="footer-brand">
+            
+            <div class="brand-logos">
+  
+                <img src="assets/img/logo-agrovector-blanco.webp" alt="Agrovector" class="logo-principal">
+                <a href="https://gteex.com.ar" target="_blank" rel="noopener noreferrer" aria-label="Sitio web de GTEEX">
+                    <img src="assets/img/logo-gteex.webp" loading="lazy" alt="GTEEX" class="logo-gteex">
+                </a>
+                <a href="https://www.drops-agro.com/" target="_blank" rel="noopener noreferrer" aria-label="Sitio web de Drops Agro">
+                    <img src="assets/img/logo-drops.webp" loading="lazy" alt="Drops Agro" class="logo-drops">
+                </a>
+                <a href="https://tecnosulfargentina.com/" target="_blank" rel="noopener noreferrer" aria-label="Sitio web de Tecnosulf">
+                    <img src="assets/img/logo-tecnosulf.webp" loading="lazy" alt="Logo Hoja" class="logo-hoja">
+                </a>
+            </div>
+
+            <p>Sistemas integrales para un agro más eficiente. Especialistas en tecnología de aplicación, monitoreo y puesta en marcha de equipos.</p>
+        </div>
+
+
+        <!-- Bloque : Navegación -->
+        <div class="footer-col">
+            <h4>Explorar</h4>
+            <ul>
+                <li><a href="index.html#gteex">Sistemas GTEEX</a></li>
+                <li><a href="index.html#dropsagro">Drones Agrícolas</a></li>
+                <li><a href="index.html#all-products">Productos</a></li>
+                <li><a href="index.html#capacitaciones">Experiencias</a></li>
+                <li><a href="index.html#sobre-nosotros">Sobre Nosotros</a></li>
+            </ul>
+        </div>
+
+        <!-- Bloque : Contacto -->
+        <div class="footer-col">
+            <h4>Atención Comercial</h4>
+            
+            <div class="contacto-info">
+                <div class="contacto-item">
+                    <span class="label">Asesor</span>
+                    <span class="valor">Fabio Knell</span>
+                </div>
+                <div class="contacto-item">
+                    <span class="label">Línea Directa</span>
+                    <span class="valor">2494 514837</span>
+                </div>
+                <div class="contacto-item">
+                    <span class="label">Correo Electrónico</span>
+                    <a href="mailto:fabioknell@yahoo.com.ar" class="contacto-link">fabioknell@yahoo.com.ar</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <div class="footer-bottom">
+        <span>© 2026 Agrovector. Todos los derechos reservados.</span>
+        <span>Desarrollado para el campo argentino</span>
+    </div>
+    </div>
+</body>
+</html>

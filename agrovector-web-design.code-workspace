@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "agrovector-web-design",
+			"path": "."
+		},
+		{
+			"name": "img-web",
+			"path": "../img-web"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "agrovector-web-design"
+	}
+}

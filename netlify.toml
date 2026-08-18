@@ -1,0 +1,22 @@
+# ── Agrovector — configuración para Netlify (alternativa gratuita) ──
+# Netlify comprime (gzip/brotli) automáticamente; esto agrega caché.
+
+[[headers]]
+  for = "/assets/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+  for = "/assets/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/assets/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
