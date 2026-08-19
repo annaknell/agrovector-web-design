@@ -59,15 +59,19 @@
                     <img class="logo" src="assets/img/logo-agrovector.webp" alt="Logo Agrovector">
                 </a>
                 
-                <a href="index.html" class="btn-volver">
-                    ← Volver al sitio principal
-                </a>
                 <a href="index.html#contacto" class="desktop-contact-btn resultados-contact">CONTACTANOS</a>
             </nav>
         </header>
-
+        
         <!-- Contenido Principal de Resultados -->
         <main class="resultados-container">
+            <!-- Botón Volver alineado a la derecha -->
+            <div class="top-nav-bar">
+                <a href="index.html" class="btn-volver">
+                    ← Volver al sitio principal
+                </a>
+            </div>
+
             <div class="resultados-header">
                 <div>
                     <span class="eyebrow">Documentación técnica</span>
@@ -75,20 +79,17 @@
                     <p>Documentación técnica de puesta en marcha, calibración y ensayos de precisión.</p>
                 </div>
 
-              
                 <a href="assets/pdf/validacion-resultados.pdf" target="_blank" download class="btn-descargar">
                     <span>Descargar informe (PDF)</span>
                 </a>
             </div>
 
-            <!-- Visor del PDF -->
+            <!-- Visor del PDF corregido -->
             <div class="pdf-viewer-container">
-                <object data="assets/pdf/validacion-resultados.pdf#view=FitH" type="application/pdf">
-                    <iframe src="assets/pdf/validacion-resultados.pdf">
-                        <p>Tu navegador no soporta la visualización de PDF directa. 
-                        <a href="assets/pdf/validacion-resultados.pdf" target="_blank">Hacé clic aquí para descargar o ver el PDF.</a></p>
-                    </iframe>
-                </object>
+                <iframe src="assets/pdf/validacion-resultados.pdf" type="application/pdf">
+                    <p>Tu navegador no soporta la visualización de PDF. 
+                    <a href="assets/pdf/validacion-resultados.pdf" target="_blank">Hacé clic aquí para descargar el PDF.</a></p>
+                </iframe>
             </div>
         </main>
 

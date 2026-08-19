@@ -402,3 +402,32 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { threshold: 0.25 });
     observador.observe(tarjeta);
 });
+
+// ==========================================
+// EFECTO TIPO MÁQUINA DE ESCRIBIR (Hero)
+// ==========================================
+
+const titulo = document.querySelector('.hero-titulo');
+
+if(titulo){
+    const textoOriginal = titulo.textContent.trim();
+    titulo.textContent = '';
+
+    let i = 0;
+    const velocidad = 60;
+
+    function writeTitle(){
+        if(i < textoOriginal.length){
+            titulo.textContent += textoOriginal.charAt(i);
+            i++;
+            setTimeout(writeTitle, velocidad);
+        }
+        else{
+            titulo.classList.add('terminado');
+        }
+    }
+
+    setTimeout(() =>{
+        writeTitle();
+    }, 1200);
+}
