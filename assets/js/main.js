@@ -104,31 +104,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const header = document.querySelector('header');
 
     if (header) {
-        // rAF throttle: el handler corre como máximo 1 vez por frame
-        // (el comportamiento es idéntico, pero sin trabajo innecesario).
+        
         let enEsperaDeFrame = false;
+        const heroSeccion = document.querySelector('.hero-video-container');
         const manejarScroll = function () {
             enEsperaDeFrame = false;
             const desplazamientoActual = window.scrollY;
+
+            const umbral = heroSeccion ? heroSeccion.offsetHeight - 80 : 60;
+            header.classList.toggle('scrolled', desplazamientoActual > umbral);
 
             if (desplazamientoActual > 50 && menuLinks && menuLinks.classList.contains('activo')) {
                 menuLinks.classList.remove('activo');
                 if (itemSubMenu) itemSubMenu.classList.remove('abierto');
                 if (botonMenu) botonMenu.setAttribute('aria-expanded', 'false');
             }
-
-            if (desplazamientoActual <= 100) {
-                header.classList.remove('hidden-header');
-                ubicacionActual = desplazamientoActual;
-                return;
-            }
-
-            if (ubicacionActual >= desplazamientoActual) {
-                header.classList.remove('hidden-header');
-            } else {
-                header.classList.add('hidden-header');
-            }
-            ubicacionActual = desplazamientoActual;
         };
 
         window.addEventListener('scroll', function () {
@@ -207,6 +197,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     
         iniciarAutoPlayInteractivo();
+    }
+
+    // 5b. ACORDEON DE SERVICIOS (Sección 3 nueva)
+    // ==========================================
+    const metodoItems = document.querySelectorAll('.metodo-item');
+    if (metodoItems.length > 0) {
+        metodoItems.forEach((item) => {
+            item.addEventListener('click', () => {
+                const abierto = item.classList.contains('abierto');
+                metodoItems.forEach((x) => x.classList.remove('abierto'));
+                if (!abierto) {
+                    item.classList.add('abierto');
+                }
+            });
+        });
     }
 
     // =========================
