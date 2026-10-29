@@ -1529,35 +1529,76 @@ button a{
     background: linear-gradient(135deg, #0E5831 0%, #0a3f23 100%);
     color: #fff;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
-    padding: 46px 7%;
-    text-align: center;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0;
+    padding: 0 4%;
 }
 .stat-item {
     display: flex;
-    flex-direction: column;
-    gap: 6px;
+    align-items: center;
+    gap: 14px;
+    padding: 24px 22px;
+    border-left: 1px solid rgba(255, 255, 255, 0.18);
+    text-align: left;
+}
+.stat-item:first-child {
+    border-left: 0;
+}
+.stat-icono {
+    width: 40px;
+    height: 40px;
+    flex: 0 0 auto;
+    fill: none;
+    stroke: rgba(255, 255, 255, 0.9);
+    stroke-width: 1.4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+.stat-texto {
+    display: grid;
+    min-width: 0;
 }
 .stat-numero {
     font-family: 'Contrail One', display;
-    font-size: 40px;
-    line-height: 1;
+    font-size: 26px;
+    line-height: 1.1;
     color: #ffffff;
 }
 .stat-label {
     font-family: 'Arimo', sans-serif;
-    font-size: 13px;
-    letter-spacing: 0.4px;
-    color: rgba(255, 255, 255, 0.85);
+    font-size: 13.5px;
+    line-height: 1.4;
+    letter-spacing: 0.2px;
+    color: rgba(255, 255, 255, 0.82);
+}
+@media (max-width: 1023px) {
+    .stats-section {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .stat-item:nth-child(odd) {
+        border-left: 0;
+    }
+    .stat-item:nth-child(n + 3) {
+        border-top: 1px solid rgba(255, 255, 255, 0.18);
+    }
 }
 @media (max-width: 640px) {
     .stats-section {
-        padding: 36px 5%;
-        gap: 22px;
+        padding: 0 5%;
+    }
+    .stat-item {
+        gap: 10px;
+        padding: 18px 12px;
+    }
+    .stat-icono {
+        width: 28px;
+        height: 28px;
     }
     .stat-numero {
-        font-size: 32px;
+        font-size: 20px;
+    }
+    .stat-label {
+        font-size: 12px;
     }
 }
 
@@ -1723,10 +1764,6 @@ button a{
     .item-submenu.abierto .link-toggle {
         color: #0E5831;
         font-weight: 600;
-    }
-    .stats-section {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 28px;
     }
     .barra-progreso {
         display: block;
