@@ -321,7 +321,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         obsContadores.unobserve(entrada.target);
                     }
                 });
-            }, { threshold: 0.4, rootMargin: '0px 0px -20% 0px' });
+            }, { threshold: 0.2 });
             contadores.forEach((c) => {
                 if (c.getBoundingClientRect().top < 0) {
                     // recarga a mitad de página: la franja ya pasó, mostramos el total
