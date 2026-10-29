@@ -308,16 +308,27 @@ document.addEventListener('DOMContentLoaded', () => {
                     requestAnimationFrame(paso);
                 }, retardo);
             };
+            const valorFinal = (el) => (el.dataset.prefijo || '') + (Number(el.dataset.contador) || 0).toLocaleString('es-AR') + (el.dataset.sufijo || '');
             const obsContadores = new IntersectionObserver((entradas) => {
                 entradas.forEach((entrada) => {
                     if (entrada.isIntersecting) {
                         // uno atrás del otro, para que se note el conteo
                         animarContador(entrada.target, Array.prototype.indexOf.call(contadores, entrada.target) * 140);
                         obsContadores.unobserve(entrada.target);
+                    } else if (entrada.boundingClientRect.top < 0) {
+                        // ya quedó arriba de la pantalla (recarga a mitad de página): mostramos el total
+                        entrada.target.textContent = valorFinal(entrada.target);
+                        obsContadores.unobserve(entrada.target);
                     }
                 });
             }, { threshold: 0.4 });
-            contadores.forEach((c) => obsContadores.observe(c));
+            contadores.forEach((c) => {
+                if (c.getBoundingClientRect().top < 0) {
+                    c.textContent = valorFinal(c);
+                } else {
+                    obsContadores.observe(c);
+                }
+            });
         } else {
             contadores.forEach((c) => {
                 c.textContent = (c.dataset.prefijo || '') + (Number(c.dataset.contador) || 0).toLocaleString('es-AR') + (c.dataset.sufijo || '');
