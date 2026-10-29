@@ -2357,3 +2357,390 @@ header:not(.scrolled) .desktop-contact-btn:hover {
         max-width: none;
     }
 }
+
+
+/* --- 6. Botón del header: igual al de la propuesta (verde #24583B, esquinas casi rectas) --- */
+
+.desktop-contact-btn,
+.mobile-contact-btn {
+    background-color: #24583B;
+    color: #ffffff;
+    border-radius: 2px;
+    width: auto;
+    height: auto;
+    min-height: 46px;
+    padding: 0 22px;
+    font-family: 'Arimo', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0;
+    box-shadow: none;
+    transition: background-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.desktop-contact-btn:hover,
+.mobile-contact-btn:hover {
+    background-color: #1E4A31;
+    color: #ffffff;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px rgba(30, 74, 49, 0.28);
+}
+
+header:not(.scrolled) .desktop-contact-btn {
+    background-color: #24583B;
+    color: #ffffff;
+    box-shadow: 0 10px 24px rgba(11, 42, 26, 0.3);
+}
+
+header:not(.scrolled) .desktop-contact-btn:hover {
+    background-color: #1E4A31;
+    color: #ffffff;
+}
+
+/* --- 7. Servicios: tres columnas, como en la propuesta --- */
+
+.interactiva-header--left {
+    text-align: left;
+    max-width: 1030px;
+    margin: 72px auto 34px;
+    padding: 0 24px;
+}
+
+.interactiva-header--left h2 {
+    font-size: clamp(28px, 3vw, 40px);
+    line-height: 1.15;
+    color: #14302a;
+    margin: 0 0 12px;
+}
+
+.interactiva-header--left p {
+    font-size: 17px;
+    line-height: 1.62;
+    color: #4a5560;
+    max-width: 62ch;
+    margin: 0;
+}
+
+.interactive-container.formas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 40px 36px;
+    width: auto;
+    max-width: 1030px;
+    margin: 0 auto;
+    padding: 0 24px 68px;
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+}
+
+.forma {
+    border-top: 2px solid #14302a;
+    padding-top: 18px;
+}
+
+.forma h3 {
+    margin: 0 0 10px;
+    font-family: 'Arimo', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1.25;
+    color: #14302a;
+}
+
+.forma p {
+    margin: 0 0 16px;
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    line-height: 1.62;
+    color: #3f4a44;
+}
+
+.forma dl {
+    margin: 0;
+    display: grid;
+    gap: 9px;
+}
+
+.forma dl div {
+    display: grid;
+    grid-template-columns: 62px minmax(0, 1fr);
+    gap: 10px;
+}
+
+.forma dt {
+    font-family: 'Arimo', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.6;
+    color: #0E5831;
+    padding-top: 1px;
+}
+
+.forma dd {
+    margin: 0;
+    font-family: 'Arimo', sans-serif;
+    font-size: 14.5px;
+    line-height: 1.55;
+    color: #4a5560;
+}
+
+@media (max-width: 900px) {
+    .interactiva-header--left {
+        margin: 52px auto 26px;
+        padding: 0 18px;
+    }
+
+    .interactive-container.formas-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 30px;
+        padding: 0 18px 48px;
+    }
+}
+
+/* --- 8. Contacto: quién atiende + formulario (estilo propuesta) --- */
+
+.contacto-wrapper {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    padding: 96px 24px;
+    background-color: #F4F7F2;
+    background-image: none;
+    background-attachment: scroll;
+    background-size: auto;
+}
+
+.contacto-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+    gap: 56px;
+    align-items: start;
+    max-width: 1030px;
+    margin: 0 auto;
+}
+
+.contacto-datos h2,
+.contacto-form-col h2 {
+    margin: 0 0 10px;
+    font-family: 'Contrail One', display, sans-serif;
+    font-size: clamp(26px, 2.6vw, 34px);
+    font-weight: 400;
+    line-height: 1.1;
+    color: #14302a;
+}
+
+.contacto-lede {
+    margin: 0 0 26px;
+    max-width: 46ch;
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    line-height: 1.62;
+    color: #4a5560;
+}
+
+.contacto-lista {
+    margin: 0 0 28px;
+    display: grid;
+    gap: 0;
+}
+
+.contacto-lista div {
+    display: grid;
+    grid-template-columns: 92px minmax(0, 1fr);
+    gap: 16px;
+    align-items: baseline;
+    padding: 12px 0;
+    border-bottom: 1px solid #DCE5DD;
+}
+
+.contacto-lista div:first-child {
+    border-top: 1px solid #DCE5DD;
+}
+
+.contacto-lista dt {
+    font-family: 'Arimo', sans-serif;
+    font-size: 13px;
+    color: #6b7a70;
+}
+
+.contacto-lista dd {
+    margin: 0;
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #14302a;
+    word-break: break-word;
+}
+
+.contacto-lista dd a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(14, 88, 49, 0.28);
+    transition: border-bottom-color 0.18s ease;
+}
+
+.contacto-lista dd a:hover {
+    border-bottom-color: #0E5831;
+}
+
+.contacto-datos .btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    width: auto;
+    height: auto;
+    min-height: 46px;
+    margin: 0;
+    padding: 0 22px;
+    border-radius: 2px;
+    background-color: #24583B;
+    color: #ffffff;
+    font-family: 'Arimo', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.contacto-datos .btn-whatsapp:hover {
+    background-color: #1E4A31;
+    color: #ffffff;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px rgba(11, 71, 38, 0.24);
+}
+
+.form-contacto {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px 18px;
+    margin: 0;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.campo--ancho {
+    grid-column: 1 / -1;
+}
+
+.campo label {
+    font-family: 'Arimo', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #14302a;
+}
+
+.campo label span {
+    font-weight: 400;
+    color: #6b7a70;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #CFDCD2;
+    border-radius: 2px;
+    background-color: #ffffff;
+    font-family: 'Arimo', sans-serif;
+    font-size: 15px;
+    color: #14302a;
+    transition: border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    outline: none;
+    border-color: #0E5831;
+    box-shadow: 0 0 0 3px rgba(14, 88, 49, 0.12);
+}
+
+.campo [aria-invalid="true"] {
+    border-color: #B42318;
+    box-shadow: 0 0 0 3px rgba(180, 35, 24, 0.1);
+}
+
+.campo textarea {
+    min-height: 92px;
+    resize: vertical;
+}
+
+.campo--accion {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px 18px;
+    margin-top: 4px;
+}
+
+.btn-enviar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 46px;
+    padding: 0 24px;
+    border: none;
+    border-radius: 2px;
+    background-color: #24583B;
+    color: #ffffff;
+    font-family: 'Arimo', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #1E4A31;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px rgba(30, 74, 49, 0.24);
+}
+
+.btn-enviar:focus-visible {
+    outline: 2px solid #24583B;
+    outline-offset: 3px;
+}
+
+.form-nota {
+    margin: 0;
+    font-family: 'Arimo', sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #B42318;
+}
+
+.form-nota--ok {
+    color: #0E5831;
+}
+
+@media (max-width: 900px) {
+    .contacto-wrapper {
+        padding: 64px 18px;
+    }
+
+    .contacto-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 38px;
+    }
+
+    .contacto-lista div {
+        grid-template-columns: 84px minmax(0, 1fr);
+        gap: 12px;
+    }
+
+    .form-contacto {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .contacto-datos .btn-whatsapp {
+        width: 100%;
+    }
+}
