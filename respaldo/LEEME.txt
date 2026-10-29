@@ -1,0 +1,30 @@
+RESPALDO - Agrovector
+=====================
+
+Acá guardé los bloques anteriores de index.html, tal cual estaban, para poder
+volver atrás sin depender de Git.
+
+contacto-original.html
+    La sección de contacto que tenía el sitio antes de tocarlo:
+    fondo con foto del campo (background-attachment: fixed) y tarjeta blanca
+    angosta con los datos y el botón de WhatsApp.
+
+contacto-panel-verde.html
+    La versión intermedia que hice primero: panel verde sobre fondo claro,
+    dos columnas y el botón al pie.
+
+servicios-acordeon.html
+    El bloque "Nuestros servicios" con el acordeón de tres items
+    (Estándar GTEEX / Integración Multimarca / Jornadas en Campo).
+
+CÓMO VOLVER ATRÁS
+En index.html, buscá el bloque equivalente y reemplazalo por el contenido del
+archivo de respaldo (sin las dos primeras líneas de comentario).
+
+Los estilos viejos siguen en assets/css/style.css: las reglas de .contacto-wrapper,
+.card-contacto, .contacto-row y .btn-whatsapp de la versión original no se
+borraron, y las nuevas están al final del archivo, en el bloque "AJUSTES".
+Si volvés al contacto original, alcanza con quitar del final del CSS el bloque
+"5. Contacto: panel verde sobre fondo claro" y la sección ".contacto-grid".
+
+Git también lo tiene: el commit anterior a los cambios es fe8fdbc.
