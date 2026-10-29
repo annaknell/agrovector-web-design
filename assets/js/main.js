@@ -290,26 +290,29 @@ document.addEventListener('DOMContentLoaded', () => {
         // ==============================
         const contadores = document.querySelectorAll('.stat-numero');
         if (contadores.length && 'IntersectionObserver' in window) {
-            const animarContador = (el) => {
+            const animarContador = (el, retardo = 0) => {
                 const objetivo = Number(el.dataset.contador) || 0;
                 const prefijo = el.dataset.prefijo || '';
                 const sufijo = el.dataset.sufijo || '';
-                const duracion = 1600;
-                const inicio = performance.now();
+                const duracion = 2100;
                 const formato = (n) => n.toLocaleString('es-AR');
-                const paso = (ahora) => {
-                    const progreso = Math.min((ahora - inicio) / duracion, 1);
-                    // easing: suaviza el final
-                    const eased = 1 - Math.pow(1 - progreso, 3);
-                    el.textContent = prefijo + formato(Math.round(objetivo * eased)) + sufijo;
-                    if (progreso < 1) requestAnimationFrame(paso);
-                };
-                requestAnimationFrame(paso);
+                setTimeout(() => {
+                    const inicio = performance.now();
+                    const paso = (ahora) => {
+                        const progreso = Math.min((ahora - inicio) / duracion, 1);
+                        // easing: suaviza el final
+                        const eased = 1 - Math.pow(1 - progreso, 3);
+                        el.textContent = prefijo + formato(Math.round(objetivo * eased)) + sufijo;
+                        if (progreso < 1) requestAnimationFrame(paso);
+                    };
+                    requestAnimationFrame(paso);
+                }, retardo);
             };
             const obsContadores = new IntersectionObserver((entradas) => {
                 entradas.forEach((entrada) => {
                     if (entrada.isIntersecting) {
-                        animarContador(entrada.target);
+                        // uno atrás del otro, para que se note el conteo
+                        animarContador(entrada.target, Array.prototype.indexOf.call(contadores, entrada.target) * 140);
                         obsContadores.unobserve(entrada.target);
                     }
                 });
